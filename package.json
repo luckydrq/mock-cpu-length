@@ -1,0 +1,26 @@
+{
+  "name": "mock-cpu-length",
+  "version": "1.0.0",
+  "files": [
+    "index.js"
+  ],
+  "maintainers": [
+    {
+      "name": "luckydrq",
+      "email": "drqzju@gmail.com"
+    }
+  ],
+  "scripts": {
+    "lint": "eslint . --ext .js --cache --fix",
+    "test": "egg-bin test",
+    "prepublishOnly": "npm run lint && npm run test"
+  },
+  "devDependencies": {
+    "egg-bin": "^5.2.0",
+    "eslint": "^8.22.0",
+    "eslint-config-egg": "^12.0.0"
+  },
+  "dependencies": {
+    "is-ci": "^3.0.1"
+  }
+}
